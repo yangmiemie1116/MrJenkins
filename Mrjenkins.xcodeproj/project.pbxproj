@@ -13,6 +13,7 @@
 		0D053A301EC370F40015871F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D053A2E1EC370F40015871F /* Main.storyboard */; };
 		0D053A321EC370F40015871F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D053A311EC370F40015871F /* Assets.xcassets */; };
 		0D053A351EC370F40015871F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D053A331EC370F40015871F /* LaunchScreen.storyboard */; };
+		3FA930BBF1C1B5C02B67D132 /* libPods-Mrjenkins.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF61410AA260967389EDE513 /* libPods-Mrjenkins.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		0D053A311EC370F40015871F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D053A341EC370F40015871F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D053A361EC370F40015871F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EB1FE40BF4B4CCAF14EAE0 /* Pods-Mrjenkins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mrjenkins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mrjenkins/Pods-Mrjenkins.debug.xcconfig"; sourceTree = "<group>"; };
+		53B280D4633F19325961A104 /* Pods-Mrjenkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mrjenkins.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mrjenkins/Pods-Mrjenkins.release.xcconfig"; sourceTree = "<group>"; };
+		EF61410AA260967389EDE513 /* libPods-Mrjenkins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mrjenkins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA930BBF1C1B5C02B67D132 /* libPods-Mrjenkins.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0D053A241EC370F40015871F /* Mrjenkins */,
 				0D053A231EC370F40015871F /* Products */,
+				F6E04AD1BB93A9A2190FEF3C /* Pods */,
+				3BBC41B380973D05D55A6F57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3BBC41B380973D05D55A6F57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF61410AA260967389EDE513 /* libPods-Mrjenkins.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6E04AD1BB93A9A2190FEF3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22EB1FE40BF4B4CCAF14EAE0 /* Pods-Mrjenkins.debug.xcconfig */,
+				53B280D4633F19325961A104 /* Pods-Mrjenkins.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D053A391EC370F40015871F /* Build configuration list for PBXNativeTarget "Mrjenkins" */;
 			buildPhases = (
+				7B66616371B7078F529C1302 /* [CP] Check Pods Manifest.lock */,
 				0D053A1E1EC370F40015871F /* Sources */,
 				0D053A1F1EC370F40015871F /* Frameworks */,
 				0D053A201EC370F40015871F /* Resources */,
+				30684E8743E973826CB4C57A /* [CP] Embed Pods Frameworks */,
+				5D9E40F54F42385B9098F181 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +137,7 @@
 				TargetAttributes = {
 					0D053A211EC370F40015871F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N8D3L37B6A;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -144,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30684E8743E973826CB4C57A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mrjenkins/Pods-Mrjenkins-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D9E40F54F42385B9098F181 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mrjenkins/Pods-Mrjenkins-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B66616371B7078F529C1302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D053A1E1EC370F40015871F /* Sources */ = {
@@ -268,8 +344,10 @@
 		};
 		0D053A3A1EC370F40015871F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22EB1FE40BF4B4CCAF14EAE0 /* Pods-Mrjenkins.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N8D3L37B6A;
 				INFOPLIST_FILE = Mrjenkins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiqiang.Mrjenkins;
@@ -279,8 +357,10 @@
 		};
 		0D053A3B1EC370F40015871F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B280D4633F19325961A104 /* Pods-Mrjenkins.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N8D3L37B6A;
 				INFOPLIST_FILE = Mrjenkins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiqiang.Mrjenkins;
@@ -307,6 +387,7 @@
 				0D053A3B1EC370F40015871F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Mrjenkins.xcscheme_^#shared#^_</key>
+		<key>Pods-Mrjenkins.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D053A211EC370F40015871F</key>
+		<key>32C27DC47B2A2959B82EB87A8836266A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
